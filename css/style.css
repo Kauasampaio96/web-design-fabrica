@@ -1,0 +1,410 @@
+/*Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 715px;
+}
+
+.container{
+    width: 68%;
+    display: flex;
+}
+
+.hero-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.hero-description img{
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+.hero-description h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+}
+
+.hero-description h1 strong{
+    color: #B01316;
+}
+
+
+.hero-description p{
+    width: 80%;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+
+    margin-bottom: 55px;
+}
+
+.hero-description button{
+    width: 60%;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    padding: 15px 78px;
+    border-radius: 4px;
+    background-color: #B01316;
+    
+    transition: 0.3s all;
+    cursor: pointer;
+
+}
+
+
+.hero-description button:hover{
+   background-color: #911214;
+
+}
+
+
+.hero-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero-image img{
+    position: absolute;
+    top: -2.5px;
+    right: 0px;
+    
+}
+
+
+/*Section1*/
+
+
+.sc1-foryou{
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    background-color: #0C0B0B;
+    border: 2px solid #E2181A;
+}
+
+.sc1-foryou .container{
+    display: flex;
+    justify-content: center;
+}
+
+.sc1-foryou .container h1{
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:40px;
+    position: relative;
+    top: -20px;
+    text-transform: uppercase;
+}
+
+.sc1-foryou .direction-foryou{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sc1-foryou .flex-foryou{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc1-foryou .flex-foryou .elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.sc1-foryou .flex-foryou .elem img{
+    margin-bottom: 12px;
+}
+
+.sc1-foryou .flex-foryou .elem p{
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1700px){
+
+    header{
+        height: 598px;
+    }
+    
+    .hero-image img {
+        height: 600px;
+    }
+
+
+    .hero-description h1{
+        font-size: 37px;
+    }
+    
+    
+    .hero-description p{
+
+        font-size: 16px;
+ 
+    }
+}
+
+
+
+@media (max-width: 1550px){
+
+    header{
+        height: 498px;
+    }
+
+    .hero-image img {
+        height: 500px;
+    }
+
+
+    .hero-description h1{
+        font-size: 32px;
+    }
+    
+    
+    .hero-description p{
+
+        font-size: 14px;
+ 
+    }
+
+    .hero-description button{    
+        padding: 15px 40px;
+    }
+
+    .container{
+        width: 75%;
+    }
+
+    .hero-description img{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+
+    .sc1-foryou .container h1{
+        font-size: 22px;
+        margin-bottom:50px;
+        position: relative;
+        top: 0px;
+    }
+    
+    .sc1-foryou .flex-foryou .elem{
+        margin-bottom: 30px;
+    }
+
+    .sc1-foryou .flex-foryou .elem img{
+        width: 65px;
+    }
+
+    .sc1-foryou .flex-foryou .elem p{
+        width: 75%;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 1250px){
+
+    header{
+        height: 449px;
+    }
+
+    .hero-image img {
+        height: 450px;
+    }
+
+
+    .hero-description h1{
+        font-size: 28px;
+    }
+    
+    
+    .hero-description p{
+
+        font-size: 14px;
+ 
+    }
+
+    .hero-description img{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+
+    .hero-description button{    
+        padding: 15px 40px;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 1050px){
+    .hero-image{
+        display: none;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+
+
+    .hero-description h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    
+    .hero-description p{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+ 
+    }
+
+    .hero-description img{
+        width: 180px;
+        margin: 0 auto 25px auto;
+    }
+
+    .hero-description button{    
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .sc1-foryou{
+        height: 650px;
+    }
+
+
+    .sc1-foryou .container h1{
+        margin-bottom:50px;
+        position: relative;
+        top: 0px;
+    }
+
+
+    .sc1-foryou .flex-foryou{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sc1-foryou .flex-foryou .elem{
+        margin-bottom: 50px;
+    }
+
+    .sc1-foryou .flex-foryou .elem img{
+        width: 70px;
+    }
+    
+}
+
+
+@media (max-width: 550px){
+   
+    .hero-description h1{
+        font-size: 25px;
+    }
+    
+    
+    .hero-description p{
+        font-size: 12px;
+    }
+
+    .hero-description img{
+        width: 180px;
+    }
+
+    .hero-description button{    
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .sc1-foryou{
+        height: 650px;
+    }
+
+
+    .sc1-foryou .container h1{
+        margin-bottom:50px;
+        position: relative;
+        top: 0px;
+    }
+
+
+    .sc1-foryou .flex-foryou{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sc1-foryou .flex-foryou .elem{
+        margin-bottom: 50px;
+    }
+
+    .sc1-foryou .flex-foryou .elem img{
+        width: 70px;
+    }
+    
+}
