@@ -113,7 +113,7 @@ header{
     justify-content: center;
     height: 320px;
     background-color: #0C0B0B;
-    border: 2px solid #E2181A;
+    border: 1px solid #E2181A;
 }
 
 .sc1-foryou .container{
@@ -160,6 +160,165 @@ header{
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
+
+/*Section 2*/
+
+.sc2-how{
+    height: 100%;
+    background-color: black;
+    border: 0px 1px 1px 1px solid #E2181A;
+
+}
+
+.sc2-how .how-cards{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sc2-how .how-cards h1{
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    margin-bottom:60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sc2-how .how-cards h1 strong{
+    color: #E2181A;
+}
+
+.sc2-how .cards{
+    height: 440px;
+}
+
+/*Single Card*/
+
+.how-cards .cards .single-card{
+    width: 25%;
+    height: 100%;
+    border: 1px solid #E2181A;
+    margin-right: 20px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.how-cards .cards .single-card-descrition .scd-group1{
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 20px;
+}
+
+.how-cards .cards .single-card-descrition h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.how-cards .cards .single-card-descrition button{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #B01316;
+    padding: 4px 40px;
+    border: 0;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.how-cards .cards .single-card .know-more{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #B01316;
+}
+
+.how-cards .cards .single-card .know-more a{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.how-cards .cards .single-card .know-more:hover a{
+    color: rgb(213, 213, 213);
+}
+
+.how-cards .cards .single-card .know-more img{
+    margin:0 7px 0 10px;
+}
+
+.how-cards .cards #card1{
+    background-image: url('../assets/card1.png');
+}
+
+.how-cards .cards #card2{
+    background-image: url('../assets/card2.png');
+}
+
+
+.how-cards .cards #card3{
+    background-image: url('../assets/card3.png');
+}
+
+.how-cards .cards #card4{
+    background-image: url('../assets/card4.png');
+}
+
+
+/*Button How*/
+
+.sc2-how .how-cards .button-popup{
+    padding: 15px 90px;
+    background-color: #B01316;
+
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 55px;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    animation: button-popup 1s infinite alternate;
+}
+
+.sc2-how .how-cards .button-popup a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+@keyframes button-popup{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.15);
+    }
+}
+
 
 
 
@@ -257,6 +416,10 @@ header{
         width: 75%;
         font-size: 13px;
     }
+}
+
+@media (max-width: 1400px){
+    
 }
 
 
