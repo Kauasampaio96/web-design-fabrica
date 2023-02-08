@@ -166,7 +166,7 @@ header{
 .sc2-how{
     height: 100%;
     background-color: black;
-    border: 0px 1px 1px 1px solid #E2181A;
+    border: 0px 0px 1px 0px solid #E2181A;
 
 }
 
@@ -176,20 +176,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
-.sc2-how .how-cards h1{
+.sc2-how .how-cards h1,.how-depoimentos h1{
     font-size: 27px;
     font-weight: bold;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding-top: 50px;
-    margin-bottom:60px;
+    margin: 0 20px 60px 20px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.sc2-how .how-cards h1 strong{
+.sc2-how .how-cards h1 strong, .how-depoimentos h1 strong{
     color: #E2181A;
 }
 
@@ -254,12 +255,11 @@ header{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 0.3s;
     
 }
 
 .how-cards .cards .single-card .know-more:hover a{
-    color: rgb(213, 213, 213);
+    text-decoration: underline;
 }
 
 .how-cards .cards .single-card .know-more img{
@@ -267,19 +267,31 @@ header{
 }
 
 .how-cards .cards #card1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: url('../assets/card1.png');
 }
 
 .how-cards .cards #card2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: url('../assets/card2.png');
 }
 
 
 .how-cards .cards #card3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: url('../assets/card3.png');
 }
 
 .how-cards .cards #card4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: url('../assets/card4.png');
 }
 
@@ -295,11 +307,17 @@ header{
     text-align: center;
 
     margin-top: 55px;
+    border: none;
     border-radius: 4px;
 
     cursor: pointer;
 
+    transition: 0.5s;
     animation: button-popup 1s infinite alternate;
+}
+
+.sc2-how .how-cards .button-popup:hover{
+    background-color: #911214;
 }
 
 .sc2-how .how-cards .button-popup a{
@@ -315,10 +333,73 @@ header{
     }
 
     100%{
-        transform: scale(1.15);
+        transform: scale(1.05);
     }
 }
 
+
+/*Depoimentos*/
+
+.sc2-how .how-depoimentos{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sc2-how .depoimentos{
+    height: 350px;
+    justify-content: center;
+}
+
+.sc2-how .depoimentos .single-dep{
+    width: 27%;
+    height: 100%;
+    background-color: #0C0B0B;
+    margin-right: 40px;
+    border-radius: 4px;
+    padding: 20px;
+    
+    border-bottom: 2px solid #E2181A;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header img{
+    display: flex;
+    border: 2px solid #E2181A;
+    border-radius: 16px;
+    margin-right: 25px;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header p b{
+    color: #B01316;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.sc2-how .depoimentos .single-dep p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
 
 
@@ -416,10 +497,13 @@ header{
         width: 75%;
         font-size: 13px;
     }
+    
 }
 
 @media (max-width: 1400px){
-    
+    .sc2-how .cards{
+        width: 90%;
+    }
 }
 
 
@@ -460,7 +544,7 @@ header{
 }
 
 
-@media (max-width: 1050px){
+@media (max-width: 1100px){
     .hero-image{
         display: none;
     }
@@ -520,11 +604,116 @@ header{
     .sc1-foryou .flex-foryou .elem img{
         width: 70px;
     }
+
+    .sc2-how .cards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        height: 1200px;
+
+    }
+
+    .sc2-how .how-cards{
+        height: 1400px;
+
+    }
+
+    .sc2-how .how-cards h1,.how-depoimentos h1{
+        font-size: 22px;
+    }
+
+
+    .how-cards .cards .single-card{
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+
+    .how-cards .cards .single-card-descrition .scd-group1{
+        margin-bottom: 20px;
+
+    }
+
+    .how-cards .cards .single-card-descrition h3{
+        font-size: 15px;
+    }
+    
+    .how-cards .cards .single-card-descrition button{
+        font-size: 13px;
+    }
+    
+    .how-cards .cards .single-card .know-more{
+        height: 30px;
+    }
+    
+    .how-cards .cards .single-card .know-more a{
+        font-size: 13px;
+        
+    }
+
+    .sc2-how .how-cards .button-popup{
+        margin-bottom: 40px;
+    }
+
+    .sc2-how .how-depoimentos{
+        height: 100%;
+    }
+
+    .sc2-how .depoimentos{
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+
+        height: 800px;
+
+    }
+
+    .sc2-how .depoimentos .single-dep{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        height: 300px;
+
+
+
+    }
+
+    .sc2-how .depoimentos .single-dep p{
+        font-size: 18px;
+
+    }
+
+    .sc2-how .depoimentos .single-dep .single-dep-header{
+        margin-bottom: 30px;
+    }
+
     
 }
 
+@media (max-width: 700px){
 
-@media (max-width: 550px){
+    .sc2-how .how-cards h1,.how-depoimentos h1{
+        font-size: 19px;
+    }
+
+    .sc2-how .depoimentos{
+        width: 80%;
+    }
+
+    .sc2-how .depoimentos .single-dep p{
+        font-size: 16px;
+
+    }
+
+    .sc2-how .depoimentos .single-dep .single-dep-header{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 580px){
    
     .hero-description h1{
         font-size: 25px;
@@ -571,6 +760,17 @@ header{
 
     .sc1-foryou .flex-foryou .elem img{
         width: 70px;
+    }
+
+
+    .how-cards .cards .single-card{
+        width: 75%;
+    }
+
+    .sc2-how .how-cards .button-popup{
+        padding: 15px 60px;
+        margin-top: 55px;
+    
     }
     
 }
