@@ -1,0 +1,238 @@
+// Gerais
+  
+@import 'variables'
+@import 'utilities'
+
+@include reset
+
+.container
+  width: 75%
+  display: flex
+  align-content: center
+  justify-content: space-around
+
+  @include responsive-xl
+    width: 75%
+
+  @include responsive-l
+    width: 85%
+
+
+//Header
+
+header
+  display: flex
+  justify-content: center
+  height: 70vh
+  background-color:$black 
+  overflow-x: hidden
+
+  .hero-texts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 50%
+
+    h1
+      margin: 30px 0 10px 0
+      font-size: 2.3rem
+      text-transform: none
+      @extend %h1-title-format
+
+      @include responsive-xl
+        font-size: 1.9rem
+  
+      @include responsive-l
+        font-size: 1.7rem
+    
+    p
+      @extend %p-format
+    
+    a
+      width: 50%
+      margin: 50px 0 50px 0
+      @extend %button-format
+    
+    img
+      width: 180px
+
+      @include responsive-l
+        width: 150px
+      
+      @include responsive-m
+        width: 180px
+    
+    @include responsive-m
+      width:100%
+      align-items: center
+
+  .hero-image
+    width: 50%
+    position: relative
+    display: flex
+    align-items: flex-end
+
+    img
+      position: absolute
+      height: 100%
+      left: -25%
+      bottom: 0
+
+      @include responsive-xl
+        height: 97%
+        left: -30%
+
+      @include responsive-l
+        height: 95%
+        left: -45%
+
+    @include responsive-m
+      display: none
+
+
+// Section 1
+
+.sc1-foryou
+  padding: 30px 20%
+  @extend %section-format
+
+  background-color: $secondary-black 
+  border-top: 2px solid $secondary-color
+  border-bottom: 2px solid $secondary-color
+
+  h1
+    text-transform: uppercase
+    margin: 20px 0 40px 0
+    font-size: 1.7rem
+    @extend %h1-title-format
+
+  .box-foryou
+    @extend %box-format
+
+    @include responsive-l
+      flex-direction: column
+      justify-content: center
+    
+
+    .elem
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+
+      width: 28%
+      padding: 20px
+
+      @include responsive-l
+        width: 100%
+
+      p
+        margin-top: 20px 
+        @extend %p-format
+
+        @include responsive-l
+          width: 250px
+
+
+// Section 2   
+
+.sc2-cards
+  padding: 30px 5%
+  background-color: $black
+  @extend %section-format
+
+  @include responsive-xl
+    padding: 30px 2%
+
+  @include responsive-l
+      padding: 30px 5%
+
+  h1
+    text-transform: uppercase
+    font-size: 2.3rem
+    margin: 20px 0 60px 0
+    @extend %h1-title-format
+
+  .button-popup
+    margin: 60px 0
+    width: 25%
+    font-size: 1.15rem
+    
+    @extend %button-format
+    animation: button-popup infinite 2s alternate
+
+    @include responsive-l
+      width: 47%
+  
+  @keyframes button-popup
+    0%
+      transform: scale(1)
+    100%
+      transform: scale(1.08)
+      
+  
+
+  .box-cards
+    @extend %box-format
+
+    @include responsive-l
+      flex-direction: column
+      justify-content: center
+
+    #card1
+      @extend %bg-format
+      background-image: url('../assets/card1.png')
+
+    #card2
+      @extend %bg-format
+      background-image: url('../assets/card2.png')
+
+    #card3
+      @extend %bg-format
+      background-image: url('../assets/card3.png')
+
+    #card4
+      @extend %bg-format
+      background-image: url('../assets/card4.png')
+
+    .card
+      width: 23%
+      height: 600px
+      border-radius: 5px
+      border: 2px solid $secondary-color
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+
+      @include responsive-l
+        width: 100%
+        height: 450px
+        margin-bottom: 50px
+
+
+      h2
+        width: 100%
+        text-align: center
+        text-transform: uppercase
+        @extend %h1-title-format
+        margin-bottom: 20px
+        padding: 0 20px
+      
+      button
+        width: 70%
+        margin: 0px auto 25px auto 
+        border-radius: 30px
+        font-size: 1.2rem 
+        @extend %button-format
+        
+      
+      a
+        border-radius: 0
+        text-align: left 
+        @extend %button-format
+
+        img
+          margin-right: 5px
+
+    
+      

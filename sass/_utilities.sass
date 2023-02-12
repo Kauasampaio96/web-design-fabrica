@@ -1,0 +1,95 @@
+// Mixins
+
+@mixin reset
+  *
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+
+
+// Mobile
+
+@mixin responsive-xl
+  @media (max-width:1550px)
+    @content
+
+@mixin responsive-l
+  @media (max-width:1250px)
+    @content
+
+@mixin responsive-m
+  @media (max-width:1050px)
+    @content
+
+
+// Placeholder Selectors
+
+%h1-title-format
+  text-transform: uppercase
+  color: white
+
+  b
+    color: $secondary-color
+
+
+  @include responsive-m
+    text-align: center
+
+
+
+%p-format
+  color: white
+  font-size: 1.15rem
+
+  @include responsive-xl
+    font-size: 1rem
+  
+  @include responsive-l
+    font-size: 0.9rem
+  
+  @include responsive-m
+    text-align: center
+    width: 70%
+
+
+%button-format
+  display: inline-block
+  padding: 15px 15px
+
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 1rem
+  font-weight: bold
+
+  border: none
+  background-color: $secondary-color
+  color: white
+  border-radius: 5px
+  transition: 0.5s
+
+  cursor: pointer
+
+  &:hover
+    background-color: $hover-color 
+
+
+%section-format
+  display: flex
+  flex-direction: column
+  align-items: center
+
+%box-format
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding-bottom: 20px
+
+%bg-format
+  background-position: center
+  background-size: cover
+  background-repeat: none
+
+
+

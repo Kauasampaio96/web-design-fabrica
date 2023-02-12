@@ -1,0 +1,776 @@
+/*Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 715px;
+}
+
+.container{
+    width: 68%;
+    display: flex;
+}
+
+.hero-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.hero-description img{
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+.hero-description h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+}
+
+.hero-description h1 strong{
+    color: #B01316;
+}
+
+
+.hero-description p{
+    width: 80%;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+
+    margin-bottom: 55px;
+}
+
+.hero-description button{
+    width: 60%;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    padding: 15px 78px;
+    border-radius: 4px;
+    background-color: #B01316;
+    
+    transition: 0.3s all;
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+
+}
+
+
+.hero-description button:hover{
+   background-color: #911214;
+
+}
+
+
+.hero-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero-image img{
+    position: absolute;
+    top: -2.5px;
+    right: 0px;
+    
+}
+
+
+/*Section1*/
+
+
+.sc1-foryou{
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    background-color: #0C0B0B;
+    border: 1px solid #E2181A;
+}
+
+.sc1-foryou .container{
+    display: flex;
+    justify-content: center;
+}
+
+.sc1-foryou .container h1{
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:40px;
+    position: relative;
+    top: -20px;
+    text-transform: uppercase;
+}
+
+.sc1-foryou .direction-foryou{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sc1-foryou .flex-foryou{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc1-foryou .flex-foryou .elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.sc1-foryou .flex-foryou .elem img{
+    margin-bottom: 12px;
+}
+
+.sc1-foryou .flex-foryou .elem p{
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Section 2*/
+
+.sc2-how{
+    height: 100%;
+    background-color: black;
+    border: 0px 0px 1px 0px solid #E2181A;
+
+}
+
+.sc2-how .how-cards{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sc2-how .how-cards h1,.how-depoimentos h1{
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    margin: 0 20px 60px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sc2-how .how-cards h1 strong, .how-depoimentos h1 strong{
+    color: #E2181A;
+}
+
+.sc2-how .cards{
+    height: 440px;
+}
+
+/*Single Card*/
+
+.how-cards .cards .single-card{
+    width: 25%;
+    height: 100%;
+    border: 1px solid #E2181A;
+    margin-right: 20px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.how-cards .cards .single-card-descrition .scd-group1{
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 20px;
+}
+
+.how-cards .cards .single-card-descrition h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.how-cards .cards .single-card-descrition button{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #B01316;
+    padding: 4px 40px;
+    border: 0;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.how-cards .cards .single-card .know-more{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #B01316;
+}
+
+.how-cards .cards .single-card .know-more a{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.how-cards .cards .single-card .know-more:hover a{
+    text-decoration: underline;
+}
+
+.how-cards .cards .single-card .know-more img{
+    margin:0 7px 0 10px;
+}
+
+.how-cards .cards #card1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/card1.png');
+}
+
+.how-cards .cards #card2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/card2.png');
+}
+
+
+.how-cards .cards #card3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/card3.png');
+}
+
+.how-cards .cards #card4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/card4.png');
+}
+
+
+/*Button How*/
+
+.sc2-how .how-cards .button-popup{
+    padding: 15px 90px;
+    background-color: #B01316;
+
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 55px;
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+    animation: button-popup 1s infinite alternate;
+}
+
+.sc2-how .how-cards .button-popup:hover{
+    background-color: #911214;
+}
+
+.sc2-how .how-cards .button-popup a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+@keyframes button-popup{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+
+/*Depoimentos*/
+
+.sc2-how .how-depoimentos{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sc2-how .depoimentos{
+    height: 350px;
+    justify-content: center;
+}
+
+.sc2-how .depoimentos .single-dep{
+    width: 27%;
+    height: 100%;
+    background-color: #0C0B0B;
+    margin-right: 40px;
+    border-radius: 4px;
+    padding: 20px;
+    
+    border-bottom: 2px solid #E2181A;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header img{
+    display: flex;
+    border: 2px solid #E2181A;
+    border-radius: 16px;
+    margin-right: 25px;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sc2-how .depoimentos .single-dep .single-dep-header p b{
+    color: #B01316;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.sc2-how .depoimentos .single-dep p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1700px){
+
+    header{
+        height: 598px;
+    }
+    
+    .hero-image img {
+        height: 600px;
+    }
+
+
+    .hero-description h1{
+        font-size: 37px;
+    }
+    
+    
+    .hero-description p{
+
+        font-size: 16px;
+ 
+    }
+}
+
+
+
+@media (max-width: 1550px){
+
+    header{
+        height: 498px;
+    }
+
+    .hero-image img {
+        height: 500px;
+    }
+
+
+    .hero-description h1{
+        font-size: 32px;
+    }
+    
+    
+    .hero-description p{
+
+        font-size: 14px;
+ 
+    }
+
+    .hero-description button{    
+        padding: 15px 40px;
+    }
+
+    .container{
+        width: 75%;
+    }
+
+    .hero-description img{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+
+    .sc1-foryou .container h1{
+        font-size: 22px;
+        margin-bottom:50px;
+        position: relative;
+        top: 0px;
+    }
+    
+    .sc1-foryou .flex-foryou .elem{
+        margin-bottom: 30px;
+    }
+
+    .sc1-foryou .flex-foryou .elem img{
+        width: 65px;
+    }
+
+    .sc1-foryou .flex-foryou .elem p{
+        width: 75%;
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 1400px){
+    .sc2-how .cards{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1250px){
+
+    header{
+        height: 449px;
+    }
+
+    .hero-image img {
+        height: 450px;
+    }
+
+
+    .hero-description h1{
+        font-size: 28px;
+    }
+    
+    
+    .hero-description p{
+
+        font-size: 14px;
+ 
+    }
+
+    .hero-description img{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+
+    .hero-description button{    
+        padding: 15px 40px;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 1100px){
+    .hero-image{
+        display: none;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+
+
+    .hero-description h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    
+    .hero-description p{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+ 
+    }
+
+    .hero-description img{
+        width: 180px;
+        margin: 0 auto 25px auto;
+    }
+
+    .hero-description button{    
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .sc1-foryou{
+        height: 650px;
+    }
+
+
+    .sc1-foryou .container h1{
+        margin-bottom:50px;
+        position: relative;
+        top: 0px;
+    }
+
+
+    .sc1-foryou .flex-foryou{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sc1-foryou .flex-foryou .elem{
+        margin-bottom: 50px;
+    }
+
+    .sc1-foryou .flex-foryou .elem img{
+        width: 70px;
+    }
+
+    .sc2-how .cards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        height: 1200px;
+
+    }
+
+    .sc2-how .how-cards{
+        height: 1400px;
+
+    }
+
+    .sc2-how .how-cards h1,.how-depoimentos h1{
+        font-size: 22px;
+    }
+
+
+    .how-cards .cards .single-card{
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+
+    .how-cards .cards .single-card-descrition .scd-group1{
+        margin-bottom: 20px;
+
+    }
+
+    .how-cards .cards .single-card-descrition h3{
+        font-size: 15px;
+    }
+    
+    .how-cards .cards .single-card-descrition button{
+        font-size: 13px;
+    }
+    
+    .how-cards .cards .single-card .know-more{
+        height: 30px;
+    }
+    
+    .how-cards .cards .single-card .know-more a{
+        font-size: 13px;
+        
+    }
+
+    .sc2-how .how-cards .button-popup{
+        margin: 0 0 20px 0;
+    }
+
+    .sc2-how .how-depoimentos{
+        height: 100%;
+    }
+
+    .sc2-how .depoimentos{
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+
+        height: 800px;
+
+    }
+
+    .sc2-how .depoimentos .single-dep{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        height: 300px;
+
+
+
+    }
+
+    .sc2-how .depoimentos .single-dep p{
+        font-size: 18px;
+
+    }
+
+    .sc2-how .depoimentos .single-dep .single-dep-header{
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+@media (max-width: 700px){
+
+    .sc2-how .how-cards h1,.how-depoimentos h1{
+        font-size: 19px;
+    }
+
+    .sc2-how .depoimentos{
+        width: 80%;
+    }
+
+    .sc2-how .depoimentos .single-dep p{
+        font-size: 16px;
+
+    }
+
+    .sc2-how .depoimentos .single-dep .single-dep-header{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 580px){
+   
+    .hero-description h1{
+        font-size: 25px;
+    }
+    
+    
+    .hero-description p{
+        font-size: 12px;
+    }
+
+    .hero-description img{
+        width: 180px;
+    }
+
+    .hero-description button{    
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .sc1-foryou{
+        height: 650px;
+    }
+
+
+    .sc1-foryou .container h1{
+        margin-bottom:50px;
+        position: relative;
+        top: 0px;
+    }
+
+
+    .sc1-foryou .flex-foryou{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sc1-foryou .flex-foryou .elem{
+        margin-bottom: 50px;
+    }
+
+    .sc1-foryou .flex-foryou .elem img{
+        width: 70px;
+    }
+
+
+    .how-cards .cards .single-card{
+        width: 75%;
+    }
+
+    .sc2-how .how-cards .button-popup{
+        padding: 15px 60px;
+        margin-top: 55px;
+    
+    }
+    
+}
