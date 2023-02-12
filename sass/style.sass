@@ -47,11 +47,17 @@ header
     
     p
       @extend %p-format
+      @include responsive-m
+        margin-top: 20px
+        width: 100%
     
     a
       width: 50%
       margin: 50px 0 50px 0
       @extend %button-format
+      @include responsive-m
+        font-size: 1rem
+        width: 70%
     
     img
       width: 180px
@@ -149,9 +155,12 @@ header
 
   h1
     text-transform: uppercase
-    font-size: 2.3rem
+    font-size: 2rem
     margin: 20px 0 60px 0
     @extend %h1-title-format
+
+    @include responsive-m
+        font-size: 1.7rem
 
   .button-popup
     margin: 60px 0
@@ -163,6 +172,10 @@ header
 
     @include responsive-l
       width: 47%
+    
+    @include responsive-sm
+        font-size: 1rem
+        width: 75%
   
   @keyframes button-popup
     0%
@@ -208,6 +221,9 @@ header
         width: 100%
         height: 450px
         margin-bottom: 50px
+      
+      @include responsive-m
+        width: 90%
 
 
       h2
