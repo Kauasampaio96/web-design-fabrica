@@ -1,32 +1,32 @@
-.sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
+.sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
   text-transform: uppercase;
   color: white;
 }
-.sc3-dep h1 b, .sc2-cards .box-cards .card h2 b, .sc2-cards h1 b, .sc1-foryou h1 b, header .hero-texts h1 b {
+.sc4-trainer .sc4-texts h1 b, .sc3-dep h1 b, .sc2-cards .box-cards .card h2 b, .sc2-cards h1 b, .sc1-foryou h1 b, header .hero-texts h1 b {
   color: #B01316;
 }
 @media (max-width: 1050px) {
-  .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
+  .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
     text-align: center;
   }
 }
 
-.sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+.sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
   color: white;
   font-size: 1.15rem;
 }
 @media (max-width: 1570px) {
-  .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     font-size: 1rem;
   }
 }
 @media (max-width: 1250px) {
-  .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 1050px) {
-  .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     text-align: center;
     width: 70%;
   }
@@ -51,7 +51,7 @@
   background-color: #880f11;
 }
 
-.sc3-dep, .sc2-cards, .sc1-foryou {
+.sc4-trainer, .sc3-dep, .sc2-cards, .sc1-foryou {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,6 +312,7 @@ header .hero-image img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
 }
 @media (max-width: 1250px) {
   .sc2-cards .box-cards .card {
@@ -424,6 +425,98 @@ header .hero-image img {
   position: absolute;
   bottom: 0;
   right: 5px;
+}
+
+.sc4-trainer {
+  background: #000;
+  border-top: 2px solid #B01316;
+  overflow: hidden;
+}
+.sc4-trainer .container {
+  width: 70%;
+}
+@media (max-width: 1570px) {
+  .sc4-trainer .container {
+    width: 85%;
+  }
+}
+@media (max-width: 1050px) {
+  .sc4-trainer .container {
+    width: 100%;
+  }
+}
+.sc4-trainer .sc4-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+@media (max-width: 1250px) {
+  .sc4-trainer .sc4-texts {
+    width: 70%;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+.sc4-trainer .sc4-texts-details {
+  display: flex;
+}
+@media (max-width: 1250px) {
+  .sc4-trainer .sc4-texts-details {
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .sc4-trainer .sc4-texts-details {
+    flex-direction: column;
+  }
+}
+.sc4-trainer .sc4-texts-details .details-child {
+  margin: 0 15px;
+}
+.sc4-trainer .sc4-texts-details .details-child h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.sc4-trainer .sc4-texts-details .details-child h1 b {
+  color: #E2181A;
+}
+.sc4-trainer .sc4-texts-details .details-child p {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sc4-trainer .sc4-texts h1 {
+  margin-bottom: 20px;
+}
+@media (max-width: 1050px) {
+  .sc4-trainer .sc4-texts h1 {
+    margin-bottom: 30px;
+  }
+}
+.sc4-trainer .sc4-texts p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+@media (max-width: 1050px) {
+  .sc4-trainer .sc4-texts p {
+    text-align: justify;
+    width: 100%;
+  }
+}
+.sc4-trainer .sc4-image {
+  width: 50%;
+}
+@media (max-width: 1250px) {
+  .sc4-trainer .sc4-image {
+    display: none;
+  }
+}
+@media (max-width: 1570px) {
+  .sc4-trainer .sc4-image img {
+    position: relative;
+    left: -50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

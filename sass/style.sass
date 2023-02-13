@@ -223,6 +223,8 @@ header
       flex-direction: column
       justify-content: flex-end
 
+      position: relative
+
       @include responsive-l
         width: 80%
         height: 550px
@@ -333,3 +335,84 @@ header
         bottom: 0
         right: 5px
       
+// Section 4
+
+.sc4-trainer
+  @extend %section-format
+  background: $black
+  border-top: 2px solid $secondary-color
+  overflow: hidden
+
+  .container
+    width: 70%
+
+    @include responsive-xl
+      width: 85%
+
+    @include responsive-m
+        width: 100%
+
+    
+
+  .sc4-texts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 50%
+
+    @include responsive-l
+      width: 70%
+      text-align: center
+      margin-top: 50px
+
+    &-details
+      display: flex
+
+      @include responsive-l
+        justify-content: center
+
+      @include responsive-sm
+        flex-direction: column
+
+      .details-child
+        margin: 0 15px
+        h1
+          text-align: center
+          margin-bottom: 5px
+
+          b
+            color: $primary-color
+
+        p
+          font-weight: bold
+          text-transform: uppercase
+          text-align: center
+
+    h1
+      margin-bottom: 20px
+      @extend %h1-title-format
+
+      @include responsive-m
+        margin-bottom: 30px
+    
+    p
+      font-size: 1rem
+      margin-bottom: 30px
+      @extend %p-format
+
+      @include responsive-m
+        text-align: justify
+        width: 100%
+
+
+
+  .sc4-image
+    width: 50%
+
+    @include responsive-l
+      display: none
+    
+    img
+      @include responsive-xl
+        position: relative
+        left: -50px
