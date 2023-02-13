@@ -566,6 +566,11 @@ header .hero-image img {
   margin-bottom: 20px;
   font-size: 2.2rem;
 }
+@media (max-width: 700px) {
+  .sc5-investimento .sc5-texts-box h1 {
+    font-size: 1.8rem;
+  }
+}
 .sc5-investimento .sc5-texts-box p {
   text-align: center;
   font-size: 0.95rem;
