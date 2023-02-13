@@ -12,10 +12,10 @@
   justify-content: space-around
 
   @include responsive-xl
-    width: 75%
-
-  @include responsive-l
     width: 85%
+
+  @include responsive-sm
+    width: 90%
 
 
 //Header
@@ -90,7 +90,7 @@ header
 
       @include responsive-l
         height: 95%
-        left: -45%
+        left: -30%
 
     @include responsive-m
       display: none
@@ -416,3 +416,92 @@ header
       @include responsive-xl
         position: relative
         left: -50px
+
+
+// Section 5
+
+.sc5-investimento
+  padding: 100px 0
+  background: $black
+  border-top: 2px solid $secondary-color 
+  @extend %section-format
+
+  .container
+    @include responsive-sm
+      width: 100%
+
+  .sc5-texts
+    width: 70%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    @include responsive-l
+      width: 100%
+
+    &-box
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 70%
+      padding: 30px
+      background: $secondary-black
+      border-radius: 5px
+      border: 1px solid $secondary-color
+
+      @include responsive-sm
+        width: 85%
+
+      h1
+        border-bottom: 2px solid $secondary-color
+        margin-bottom: 20px
+        font-size: 2.2rem
+        @extend %h1-title-format
+      
+      p
+        text-align: center
+        font-size: 0.95rem
+        @extend %p-format
+        width: 90%
+        margin-bottom: 20px
+
+        @include responsive-sm
+          width: 100%
+      
+      .new-price
+        font-size: 1.1rem
+        margin: 48px 0 24px 0
+
+        b
+          color: $light-color
+      
+      .or-price
+        font-size: 2rem
+        margin-bottom: 48px
+
+        @include responsive-sm
+          font-size: 1.6rem
+      
+      a
+        width: 100%
+        @extend %button-format
+
+  
+  .sc5-image
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50%
+    padding: 50px
+
+    @include responsive-l
+      display: none
+
+    p
+      margin-top: 30px
+      width: 75%
+      text-align: center
+      @extend %p-format

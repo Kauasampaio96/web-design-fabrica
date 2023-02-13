@@ -1,38 +1,41 @@
-.sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
+.sc5-investimento .sc5-texts-box h1, .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
   text-transform: uppercase;
   color: white;
 }
-.sc4-trainer .sc4-texts h1 b, .sc3-dep h1 b, .sc2-cards .box-cards .card h2 b, .sc2-cards h1 b, .sc1-foryou h1 b, header .hero-texts h1 b {
-  color: #B01316;
+.sc5-investimento .sc5-texts-box h1 b, .sc4-trainer .sc4-texts h1 b, .sc3-dep h1 b, .sc2-cards .box-cards .card h2 b, .sc2-cards h1 b, .sc1-foryou h1 b, header .hero-texts h1 b {
+  color: #E2181A;
 }
 @media (max-width: 1050px) {
-  .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
+  .sc5-investimento .sc5-texts-box h1, .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
     text-align: center;
   }
 }
 
-.sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+.sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
   color: white;
   font-size: 1.15rem;
 }
 @media (max-width: 1570px) {
-  .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     font-size: 1rem;
   }
 }
 @media (max-width: 1250px) {
-  .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 1050px) {
-  .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     text-align: center;
     width: 70%;
   }
 }
+.sc5-investimento .sc5-image p b, .sc5-investimento .sc5-texts-box p b, .sc4-trainer .sc4-texts p b, .sc3-dep .box-dep .dep .dep-header p b, .sc1-foryou .box-foryou .elem p b, header .hero-texts p b {
+  color: #E2181A;
+}
 
-.sc2-cards .box-cards .card a, .sc2-cards .box-cards .card button, .sc2-cards .button-popup, header .hero-texts a {
+.sc5-investimento .sc5-texts-box a, .sc2-cards .box-cards .card a, .sc2-cards .box-cards .card button, .sc2-cards .button-popup, header .hero-texts a {
   display: inline-block;
   padding: 15px 15px;
   text-align: center;
@@ -47,13 +50,14 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.sc2-cards .box-cards .card a:hover, .sc2-cards .box-cards .card button:hover, .sc2-cards .button-popup:hover, header .hero-texts a:hover {
+.sc5-investimento .sc5-texts-box a:hover, .sc2-cards .box-cards .card a:hover, .sc2-cards .box-cards .card button:hover, .sc2-cards .button-popup:hover, header .hero-texts a:hover {
   background-color: #880f11;
 }
 
-.sc4-trainer, .sc3-dep, .sc2-cards, .sc1-foryou {
+.sc5-investimento, .sc4-trainer, .sc3-dep, .sc2-cards, .sc1-foryou {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -86,12 +90,12 @@
 }
 @media (max-width: 1570px) {
   .container {
-    width: 75%;
+    width: 85%;
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: 700px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -179,7 +183,7 @@ header .hero-image img {
 @media (max-width: 1250px) {
   header .hero-image img {
     height: 95%;
-    left: -45%;
+    left: -30%;
   }
 }
 @media (max-width: 1050px) {
@@ -517,6 +521,98 @@ header .hero-image img {
     position: relative;
     left: -50px;
   }
+}
+
+.sc5-investimento {
+  padding: 100px 0;
+  background: #000;
+  border-top: 2px solid #B01316;
+}
+@media (max-width: 700px) {
+  .sc5-investimento .container {
+    width: 100%;
+  }
+}
+.sc5-investimento .sc5-texts {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .sc5-texts {
+    width: 100%;
+  }
+}
+.sc5-investimento .sc5-texts-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 30px;
+  background: #0C0B0B;
+  border-radius: 5px;
+  border: 1px solid #B01316;
+}
+@media (max-width: 700px) {
+  .sc5-investimento .sc5-texts-box {
+    width: 85%;
+  }
+}
+.sc5-investimento .sc5-texts-box h1 {
+  border-bottom: 2px solid #B01316;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+.sc5-investimento .sc5-texts-box p {
+  text-align: center;
+  font-size: 0.95rem;
+  width: 90%;
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+  .sc5-investimento .sc5-texts-box p {
+    width: 100%;
+  }
+}
+.sc5-investimento .sc5-texts-box .new-price {
+  font-size: 1.1rem;
+  margin: 48px 0 24px 0;
+}
+.sc5-investimento .sc5-texts-box .new-price b {
+  color: #FFFFFF;
+}
+.sc5-investimento .sc5-texts-box .or-price {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+@media (max-width: 700px) {
+  .sc5-investimento .sc5-texts-box .or-price {
+    font-size: 1.6rem;
+  }
+}
+.sc5-investimento .sc5-texts-box a {
+  width: 100%;
+}
+.sc5-investimento .sc5-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 50px;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .sc5-image {
+    display: none;
+  }
+}
+.sc5-investimento .sc5-image p {
+  margin-top: 30px;
+  width: 75%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
