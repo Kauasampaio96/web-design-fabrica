@@ -16,6 +16,9 @@
     <!--Icon-->
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
 
+    <!--Animação scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Fábrica de Monstros</title>
 </head>
 <body>
@@ -25,7 +28,7 @@
 
         <div class="container">
 
-            <div class="hero-texts">
+            <div class="hero-texts" data-aos="fade-right" data-aos-duration="600">
 
                 <img src="assets/logo.png" alt="logo">
 
@@ -37,7 +40,7 @@
 
             </div><!--Hero texts-->
 
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-left">
                 <img src="assets/hero.png" alt="image-hero">
             </div><!--Hero texts-->
 
@@ -48,9 +51,9 @@
     <!--Section 1-->
     <section class="sc1-foryou">
 
-            <h1>Feito para você</h1>
+            <h1 data-aos="fade-up">Feito para você</h1>
 
-            <div class="box-foryou">
+            <div class="box-foryou" data-aos="fade-up">
 
                 <div class="elem">
 
@@ -84,11 +87,11 @@
     <!--Section 2-->
     <section class="sc2-cards">
 
-        <h1>Como Funciona o <b>Método 5x</b></h1>
+        <h1 data-aos="fade-up">Como Funciona o <b>Método 5x</b></h1>
 
         <div class="box-cards">
 
-            <div class="card" id="card1">
+            <div data-aos="zoom-in" class="card" id="card1">
 
                 <div class="card-hover"></div>
 
@@ -100,7 +103,7 @@
 
             </div>
 
-            <div class="card" id="card2">
+            <div data-aos="zoom-in" class="card" id="card2">
 
                 <h2>Cronograma dos treino</h2>
 
@@ -110,7 +113,7 @@
 
             </div>
 
-            <div class="card" id="card3">
+            <div data-aos="zoom-in" class="card" id="card3">
 
                 <h2>A importância do descanso</h2>
 
@@ -120,7 +123,7 @@
 
             </div>
 
-            <div class="card" id="card4">
+            <div data-aos="zoom-in" class="card" id="card4">
 
                 <h2>Alcançando os Objetivos</h2>
 
@@ -140,11 +143,11 @@
     <!--Section 3-->
     <section class="sc3-dep">
 
-        <h1>o que estão falando do nosso método de treinamento</h1>
+        <h1 data-aos="fade-up">o que estão falando do nosso método de treinamento</h1>
 
         <div class="box-dep">
 
-            <div class="dep">
+            <div data-aos="flip-right" class="dep">
 
                 <div class="dep-header">
                     <img src="assets/dep1.png" alt="dep1">
@@ -157,7 +160,7 @@
 
             </div>
 
-            <div class="dep">
+            <div data-aos="flip-right" class="dep">
 
                 <div class="dep-header">
                     <img src="assets/dep2.png" alt="dep2">
@@ -170,7 +173,7 @@
 
             </div>
 
-            <div class="dep">
+            <div data-aos="flip-right" class="dep">
 
                 <div class="dep-header">
                     <img src="assets/dep3.png" alt="dep3">
@@ -192,7 +195,7 @@
 
         <div class="container">
 
-            <div class="sc4-texts">
+            <div data-aos="fade-right" class="sc4-texts">
 
                 <h1>quem é seu treinador</h1>
 
@@ -230,7 +233,7 @@
 
             </div>
 
-            <div class="sc4-image">
+            <div data-aos="fade-left" class="sc4-image">
 
                 <img src="assets/hero2.png" alt=""hero2>
 
@@ -245,7 +248,7 @@
 
         <div class="container">
 
-            <div class="sc5-texts">
+            <div data-aos="fade-right" class="sc5-texts">
 
                 <div class="sc5-texts-box">
 
@@ -264,7 +267,7 @@
 
             </div>
 
-            <div class="sc5-image">
+            <div data-aos="fade-left" class="sc5-image">
 
                 <img width="203" src="assets/garantia.png" alt="garantia">
 
@@ -324,5 +327,12 @@
     <footer>
         <p>Copyright <b>© 2023.</b> Todos os direitos reservados. Design desenvolvido por <b>JonasNunes</b></p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
 </body>
 </html>
