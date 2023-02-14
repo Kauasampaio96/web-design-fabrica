@@ -11,8 +11,11 @@
 <h2>👨‍💻 Sobre o projeto</h2>
 
 <p>
-  O projeto foi feito com o objetivo de praticar conceitos de Desenvolvimento Web utilizando conhecimentos em Html e Css com pré processador Sass.<br>
-  Tenho planos de implementar Javascript em algumas partes do projeto.
+  ✅ Site totalmente responsivo para todos os tamanhos de tela <br>
+
+  ✅ Utilizei o pré-processador de css: Sass, para fazer toda a estilização do site, buscando com o mesmo um código fácil de manutenção e com pouca repetições. Implementei sem dificuldade animações às sections do site com o scripit AOS.<br>
+  
+  ✅ Ainda pretendo fazer updates no projeto utilizando JavaScript
   
 </p>
 
