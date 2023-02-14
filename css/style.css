@@ -177,13 +177,11 @@ header .hero-image img {
 @media (max-width: 1570px) {
   header .hero-image img {
     height: 97%;
-    left: -30%;
   }
 }
 @media (max-width: 1250px) {
   header .hero-image img {
     height: 95%;
-    left: -30%;
   }
 }
 @media (max-width: 1050px) {
