@@ -1,37 +1,37 @@
-.sc5-investimento .sc5-texts-box h1, .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
+.sc5-investimento .faq .faq-title h1, .sc5-investimento .sc5-texts-box h1, .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
   text-transform: uppercase;
   color: white;
 }
-.sc5-investimento .sc5-texts-box h1 b, .sc4-trainer .sc4-texts h1 b, .sc3-dep h1 b, .sc2-cards .box-cards .card h2 b, .sc2-cards h1 b, .sc1-foryou h1 b, header .hero-texts h1 b {
+.sc5-investimento .faq .faq-title h1 b, .sc5-investimento .sc5-texts-box h1 b, .sc4-trainer .sc4-texts h1 b, .sc3-dep h1 b, .sc2-cards .box-cards .card h2 b, .sc2-cards h1 b, .sc1-foryou h1 b, header .hero-texts h1 b {
   color: #E2181A;
 }
 @media (max-width: 1050px) {
-  .sc5-investimento .sc5-texts-box h1, .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
+  .sc5-investimento .faq .faq-title h1, .sc5-investimento .sc5-texts-box h1, .sc4-trainer .sc4-texts h1, .sc3-dep h1, .sc2-cards .box-cards .card h2, .sc2-cards h1, .sc1-foryou h1, header .hero-texts h1 {
     text-align: center;
   }
 }
 
-.sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+footer p, .sc5-investimento .faq .faq-answer-elem a p, .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
   color: white;
   font-size: 1.15rem;
 }
 @media (max-width: 1570px) {
-  .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  footer p, .sc5-investimento .faq .faq-answer-elem a p, .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     font-size: 1rem;
   }
 }
 @media (max-width: 1250px) {
-  .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  footer p, .sc5-investimento .faq .faq-answer-elem a p, .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 1050px) {
-  .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
+  footer p, .sc5-investimento .faq .faq-answer-elem a p, .sc5-investimento .sc5-image p, .sc5-investimento .sc5-texts-box p, .sc4-trainer .sc4-texts p, .sc3-dep .box-dep .dep .dep-header p, .sc1-foryou .box-foryou .elem p, header .hero-texts p {
     text-align: center;
     width: 70%;
   }
 }
-.sc5-investimento .sc5-image p b, .sc5-investimento .sc5-texts-box p b, .sc4-trainer .sc4-texts p b, .sc3-dep .box-dep .dep .dep-header p b, .sc1-foryou .box-foryou .elem p b, header .hero-texts p b {
+footer p b, .sc5-investimento .faq .faq-answer-elem a p b, .sc5-investimento .sc5-image p b, .sc5-investimento .sc5-texts-box p b, .sc4-trainer .sc4-texts p b, .sc3-dep .box-dep .dep .dep-header p b, .sc1-foryou .box-foryou .elem p b, header .hero-texts p b {
   color: #E2181A;
 }
 
@@ -616,6 +616,103 @@ header .hero-image img {
   margin-top: 30px;
   width: 75%;
   text-align: center;
+}
+.sc5-investimento .faq {
+  margin-top: 180px;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .faq {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1050px) {
+  .sc5-investimento .faq {
+    width: 90%;
+  }
+}
+.sc5-investimento .faq .faq-title {
+  height: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .faq .faq-title {
+    margin-bottom: 80px;
+  }
+}
+.sc5-investimento .faq .faq-title h1 {
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+}
+.sc5-investimento .faq .faq-title .h1-bg {
+  font-size: 8.5rem;
+  position: absolute;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.1019607843);
+}
+.sc5-investimento .faq .faq-answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sc5-investimento .faq .faq-answer-elem {
+  margin-bottom: 20px;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .faq .faq-answer-elem {
+    margin-bottom: 50px;
+  }
+}
+.sc5-investimento .faq .faq-answer-elem a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 1px solid #B01316;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .faq .faq-answer-elem a {
+    justify-items: center;
+  }
+}
+.sc5-investimento .faq .faq-answer-elem a img {
+  margin-right: 20px;
+}
+.sc5-investimento .faq .faq-answer-elem a p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+@media (max-width: 1250px) {
+  .sc5-investimento .faq .faq-answer-elem a p {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1050px) {
+  .sc5-investimento .faq .faq-answer-elem a p {
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  height: 50px;
+  background: #E2181A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1250px) {
+  footer p {
+    width: 90%;
+  }
+}
+footer p b {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
