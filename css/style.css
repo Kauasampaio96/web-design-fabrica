@@ -228,6 +228,9 @@ header .hero-image img {
     width: 250px;
   }
 }
+.sc1-foryou .box-foryou .elem p b {
+  color: #FFFFFF;
+}
 
 .sc2-cards {
   padding: 30px 8%;
@@ -455,7 +458,7 @@ header .hero-image img {
 }
 @media (max-width: 1250px) {
   .sc4-trainer .sc4-texts {
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin-top: 50px;
   }
